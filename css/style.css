@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 #meal-container div a>img{
-    width: 268px;
+    width: 300px;
     height: auto;
     border-radius: 5px 5px 0 0;
 }
