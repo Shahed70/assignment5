@@ -54,13 +54,7 @@
     border-radius: 5px 5px 0 0;
     margin: 20px auto 0 auto;
 }
-/* #details-container #detailsId{
-    width: 60%;
-    height: auto;
-    background-color:#EDD263;
-    margin: 0 auto;
 
-} */
 #details-container div>div{
         padding: 20px;
         background-color: #dedede;

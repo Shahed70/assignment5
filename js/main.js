@@ -1,3 +1,4 @@
+//script is start from here
 const findMeal = ()=>{
     document.getElementById('meal-container').innerHTML = ''
     const mealName = document.getElementById('meal-name').value;
@@ -5,6 +6,7 @@ const findMeal = ()=>{
     document.getElementById('meal-name').value = '';  
 }
 
+//Main data are fatched by this function
 const loadData=(mealName)=>{
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${mealName}`)
     .then(res => res.json())
@@ -12,6 +14,8 @@ const loadData=(mealName)=>{
     .catch(error => alert(`Sorry the food name you entered is not matched`))
 }
 
+
+// All meal namelist are taken by this function
 const getMealList = (mealLists)=> {
 const mealsContainer = document.getElementById('meal-container')
      mealLists.forEach(meal => {
@@ -24,12 +28,15 @@ const mealsContainer = document.getElementById('meal-container')
     });
 };
 
+// Single meal details information are taken with this function
 const showDetails = (details, image) => {
      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${details}`)
     .then(res => res.json())
     .then(data => getDetails(data.meals, image))
 }
 
+
+//All dynamic data are shown from here
 const getDetails = (detail, image) => {
 const detailsContainer = document.getElementById('details-container')
 const detailsData = `

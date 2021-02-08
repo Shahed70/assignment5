@@ -8,13 +8,14 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Delecious food</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid"> 
+        <!-- Navbar start here -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Cooking master</a>
@@ -32,7 +33,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#">Recipes</a>
+                            <a class="nav-link" href="#">Recipes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
@@ -41,24 +42,32 @@
                 </div>
             </div>
         </nav>
-        <div class="main-div">
-            <div class="container" id="details-container">
 
-            </div>
+          <!-- Navbar start here -->
+
+          <!-- Main Item start here -->
+        <div class="main-div">
+            <div class="container" id="details-container"></div> <!-- Single meal information div-->
+
             <div class="search-input my-3">
                 <input id="meal-name" type="text" class="form-contro" placeholder="Search your favourite dish" />
                 <button onclick="findMeal()" type="button" class="button">
                     Search
                 </button>
             </div>
-            <div id="meal-container" class="my-5">
-
-            </div>
+            <div id="meal-container" class="my-5"></div>
         </div>
     </div>
+
+          <!-- Main Item end here -->
+
+          <!-- footer -->
     <footer class="bg-light">
-        <p class="text-center text-dark py-3">All Right Reserved By &copy; Shahed</p>
+        <p class="text-center text-dark py-3">
+            All Right Reserved By &copy; Shahed
+        </p>
     </footer>
+    <!-- footer -->
     <script src="js/main.js"></script>
 </body>
 
